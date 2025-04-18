@@ -1,12 +1,11 @@
-import './App.css'
+import "./App.css";
 
 function App() {
-
   return (
-    <div>
-      initData: {window.Telegram.WebApp.initData || 'not found'}
+    <div style={{ whiteSpace: "pre" }}>
+      initData: {window.Telegram.WebApp.initDataUnsafe.id || "not found"}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
